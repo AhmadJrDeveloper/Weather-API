@@ -1,104 +1,17 @@
-  .app {
-    height: 100vh;
-    width: 100vw;
-    transition: background-color 1s ease-in;
-  }
-  .app__header,
-  .app__main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: "Raleway", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  /*  Search bar */
-
-  /* Current weather */
-  
-  body {
-    margin:0;
-    padding: 0;
-    display: flex;
-    background-color: #9CCEF4;
-    font-family: "Raleway", sans-serif;
-    overflow-x: hidden;
-
-  }
-  .header{
-    background-color: #759EDA;
-    padding: 50px;
-    display: flex;
-    justify-content: start;
-  }
-  .header input{
-  border: none;
-  background: transparent;
-  outline: none;
-  
-  }
-  .header input:focus{
-    border-bottom: 2px solid rgb(28, 28, 211);
-  }
-  .header button{
-    margin-left: 10px;
-    border: none;
-    width: 170px;
-    height: 55px;
-    background-color: #5879C7;
-  }
-  .main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  #img1{
-    width: 300px;  
-  }
-
-  .main h1{
-    color: white;
-    display: flex;
-    justify-content: center;
-
-  }
-  .main h2{
-    color: black;
-  }
-.main h3{
-  display: flex;
-  flex-direction: row;
-  margin-left: 40px;
-  color: rgb(2, 2, 106);
+.app {
+  height: 100vh;
+  width: 100vw;
+  transition: background-color 1s ease-in;
 }
-.main h3 span{
-  padding: 0px 10px;
 
-}
-footer{
+.app__header,
+.app__main {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin-top: 50px;
-}
-footer th{
-  padding-bottom: 50px;
-  font-size: 20px;
-}
-footer tr{
-  padding-bottom: 50px;
-}
-footer img{
-  height: 7vh;
-}
-::placeholder{
-  color: white;
+  align-items: center;
+  padding: 20px;
   font-family: "Raleway", sans-serif;
-<<<<<<< HEAD
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -112,9 +25,6 @@ footer img{
   margin: 0;
   padding: 0;
   
-=======
-
->>>>>>> 099b5c7 (testing)
 }
 
 /* Main */
@@ -228,4 +138,3 @@ font-size: 26px;
 #all img {
   height: 10vh;
 }
-
