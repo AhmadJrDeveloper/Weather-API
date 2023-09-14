@@ -24,6 +24,7 @@
 *{
   margin: 0;
   padding: 0;
+  
 }
 
 /* Main */
@@ -126,10 +127,12 @@ header button {
 #all td{
 padding-bottom: 50px;
 font-size: 26px;
+
 }
 
 #all tr {
   padding-bottom: 50px;
+  
 }
 
 #all img {
