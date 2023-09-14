@@ -1,33 +1,29 @@
 import React, { Component } from "react";
 
 import Search from "./components/Search";
+import pic from '../src/img/weather-icons/mostlycloudy.svg';
+import sunny from '../src/img/weather-icons/clear.svg';
+import Head from './components/Header';//importing the header component
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
 
 import "./App.css";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "Karim"
-    };
-  }
+function App() {
+  return (
+    <div className="App">
+      <Head />
+      <Main />
+      <Footer />
 
-  handleInputChange = value => {
-    this.setState({ name: value });
-  };
 
-  render() {
-    return (
-      <div className="app">
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
-        <Search handleInput={this.handleInputChange} />
-      </div>
-    );
-  }
+
+</div>
+  
+  );
 }
 
 export default App;
