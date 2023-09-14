@@ -35,7 +35,7 @@ body {
   overflow-x: hidden;
 }
 
-header{
+.wrapper-1 header{
   background-color: rgb(108, 144, 221);
   height: 10dvh;
   display: flex;
@@ -121,6 +121,7 @@ header button {
   flex-direction: column;
   text-align: center;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 
