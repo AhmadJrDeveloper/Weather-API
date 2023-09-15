@@ -1,5 +1,4 @@
 import React from "react";
-import clear from "../img/weather-icons/clear.svg";
 
 const Search = () => {
   return (
