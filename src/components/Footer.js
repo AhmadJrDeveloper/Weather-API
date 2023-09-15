@@ -1,7 +1,10 @@
 import mc from "../img/weather-icons/mostlycloudy.svg";
 import clear from "../img/weather-icons/clear.svg";
 import React from "react";
-function main(){
+const footer = (props)=> {
+  const convert = (x)=>{
+    return (x - 273.15).toFixed(2)
+}
     return(
         <div className="header">
             <div id="all">
@@ -25,17 +28,17 @@ function main(){
    <td><img src={mc} alt="mostly-clear" /></td>  
   </tr>
   <tr>
-    <td>8℃</td>
-    <td>9℃</td>
-    <td>14℃</td>
-    <td>17℃</td>
-    <td>18℃</td>
-    <td>16℃</td>
-    <td>13℃</td>
+    <td>{convert(props.data.list[1].main.temp)}</td>
+    <td>{convert(props.data.list[2].main.temp)}</td>
+    <td>{convert(props.data.list[3].main.temp)}</td>
+    <td>{convert(props.data.list[4].main.temp)}</td>
+    <td>{convert(props.data.list[5].main.temp)}</td>
+    <td>{convert(props.data.list[6].main.temp)}</td>
+    <td>{convert(props.data.list[7].main.temp)}</td>
   </tr>
 </table>
 </div>
             </div>
     );
 }
-export default main;
+export default footer;

@@ -7,7 +7,6 @@ import Head from './components/Header';//importing the header component
 import Main from './components/Main';
 import Footer from './components/Footer';
 
-import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
 
 import "./App.css";
@@ -16,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <Head />
-      <Main />
-      <Footer />
+      <Main data = {fakeWeatherData} />
+      <Footer data = {fakeWeatherData} />
 
 
 

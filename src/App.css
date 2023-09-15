@@ -1,26 +1,138 @@
-  .app {
-    height: 100vh;
-    width: 100vw;
-    transition: background-color 1s ease-in;
-  }
-  .app__header,
-  .app__main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: "Raleway", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+.app {
+  height: 100vh;
+  width: 100vw;
+  transition: background-color 1s ease-in;
+}
 
-  /*  Search bar */
+.app__header,
+.app__main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*  Search bar */
 
 /* Current weather */
 
-div {
-  border: 5px solid red;
+/* All Elements */
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Main */
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(131, 192, 233);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header{
+  background-color: rgb(108, 144, 221);
+  height: 10dvh;
+  display: flex;
+  align-items: center;
+}
+
+/* Input */
+header input {
+  height: 5dvh;
+  margin-left: 40px;
+  margin-right: 15px;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+}
+
+header input::placeholder{
+  color: #fff;
+}
+
+header input:focus {
+  border-bottom: 2px solid rgb(28, 28, 211);
+}
+
+/* Button */
+header button {
+  height: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: rgb(67, 113, 214);
+  border: none;
+  color: rgb(2, 2, 106);
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 400;
+  text-align: center;
+}
+/* Image */
+#image img {
+  margin: 0 auto;
+  width: 20%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 20px;
+}
+/* Headers */
+#weather h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+#temp h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(2, 2, 106);
+  margin: 30px auto;
+}
+
+#temp h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(2, 2, 106);
+  margin-left: 40px;
+}
+
+#temp h3 span {
+  padding: 0px 30px;
+  font-weight: 300;
+  color: rgb(2, 2, 106);
+}
+
+/* Table + Content */
+#all{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+#all td{
+padding-bottom: 50px;
+font-size: 26px;
+
+}
+
+#all tr {
+  padding-bottom: 50px;
+  
 }
 
 #all img {
